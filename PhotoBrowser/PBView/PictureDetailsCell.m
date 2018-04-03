@@ -119,6 +119,8 @@
 #pragma mark - 单击
 - (void)clickOnThe:(UITapGestureRecognizer *)tapGR
 {
+    [SVProgressHUD dismiss];
+    
     self.tapBlock(tapGR);
 }
 
